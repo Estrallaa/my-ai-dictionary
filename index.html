@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-R">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    
+    <meta name="theme-color" content="#007aff">
+    
+    <link rel="manifest" href="manifest.json">
+    
     <title>我的 AI 词典</title>
     <style>
         body {
@@ -143,6 +149,20 @@
 
         <button style="margin-top: 20px; background-color: #f0ad4e; width: 100%;">去 Notebook 学习 (开发中)</button>
     </div>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('Service Worker 注册成功，范围:', registration.scope);
+            })
+            .catch(error => {
+              console.log('Service Worker 注册失败:', error);
+            });
+        });
+      }
+    </script>
 
 </body>
 </html>
