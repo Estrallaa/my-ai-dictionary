@@ -1,147 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-R">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的 AI 词典</title>
+    <title>功能搭建中</title>
     <style>
+        /* * 这是一个简单的 CSS 样式
+         * 它的作用是让文字在页面上垂直和水平居中
+         */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center; /* 垂直居中 */
+            justify-content: center; /* 水平居中 */
+            height: 100vh; /* 占满整个屏幕高度 */
             margin: 0;
-            padding: 20px;
-            background-color: #f4f7f6;
-            color: #333;
+            background-color: #f8f9fa; /* 浅灰色背景 */
+            color: #333; /* 深灰色文字 */
         }
         .container {
-            max-width: 700px;
-            margin: 0 auto;
+            text-align: center;
             padding: 20px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         h1 {
-            color: #007aff;
-            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #111;
         }
-        .config, .input-area {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            gap: 10px;
-        }
-        select, input[type="text"], button {
-            width: 100%;
-            padding: 12px;
+        p {
             font-size: 16px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-        button {
-            background-color: #007aff;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .result-area {
-            display: none; /* 默认隐藏，只是一个模板 */
-            margin-top: 30px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-        .result-area h2 {
-            color: #333;
-        }
-        .image-placeholder {
-            width: 100%;
-            height: 200px;
-            background-color: #eef1f4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #aaa;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        .example-sentence {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-        .example-sentence p { margin: 5px 0; }
-        .example-sentence .translation { color: #555; font-style: italic; }
-        .usage-note {
-            background-color: #fffbeb;
-            border: 1px solid #ffde7a;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .audio-btn {
-            cursor: pointer;
-            color: #007aff;
-            font-weight: bold;
-            margin-left: 10px;
+            color: #555;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>🚀 我的 AI 词典</h1>
-
-        <div class="config">
-            <select id="native-lang">
-                <option value="zh">你的母语 (中文)</option>
-                </select>
-            <select id="target-lang">
-                <option value="en">目标语言 (English)</option>
-                </select>
-        </div>
-
-        <div class="input-area">
-            <input type="text" id="word-input" placeholder="输入单词、短语或句子...">
-        </div>
-        <button onclick="alert('这是一个静态模板！功能正在开发中...')">查询</button>
-        
-        <div class="result-area" style="display: block;"> <h2>查询结果: "Hello"</h2>
-            <button style="width: auto; background-color: #5cb85c;">💾 保存到 Notebook</button>
-            
-            <div class="image-placeholder">
-                [AI 生成的可视化图片]
-            </div>
-
-            <p><strong>定义 (中文):</strong> 一个用于打招呼或问候的词。</p>
-
-            <h3>例句</h3>
-            <div class="example-sentence">
-                <p>
-                    <strong>1.</strong> Hello! How are you today?
-                    <span class="audio-btn">[播放]</span>
-                </p>
-                <p class="translation">→ (你好！你今天怎么样？)</p>
-            </div>
-            <div class="example-sentence">
-                <p>
-                    <strong>2.</strong> She said hello to the teacher.
-                    <span class="audio-btn">[播放]</span>
-                </p>
-                <p class="translation">→ (她向老师问好。)</p>
-            </div>
-
-            <h3>💡 用法说明 (像朋友一样)</h3>
-            <div class="usage-note">
-                <p><strong>嘿！</strong> "Hello" 是最万能的打招呼方式啦！</p>
-                <p>它超级安全，对你老板、对你奶奶、对马路上不认识的人都能用。它不像 "Hi" 那么随意，也不像 "What's up" 那么街头。如果你不知道该说啥，说 "Hello" 准没错！</p>
-            </div>
-
-        </div>
-
-        <button style="margin-top: 20px; background-color: #f0ad4e; width: 100%;">去 Notebook 学习 (开发中)</button>
+        <h1>🚀 AI 词典</h1>
+        <p>这是一个静态模板，功能正在搭建中...</p>
+        <p>(This is a static template, features are under construction)</p>
     </div>
 
 </body>
